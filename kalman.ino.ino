@@ -55,8 +55,7 @@ void gyro_signals(void) {
 }
 void setup() {
   Serial.begin(57600);
-  pinMode(13, OUTPUT);
-  digitalWrite(13, HIGH);
+  
   Wire.setClock(400000);
   Wire.begin();
   delay(250);
