@@ -91,6 +91,7 @@ void loop() {
   Serial.print(KalmanAngleRoll);
   Serial.print(" Pitch Angle [°] ");
   Serial.println(KalmanAnglePitch);
+
     Serial.println("accelerationX");
 
   Serial.print(AccX);
@@ -99,7 +100,7 @@ void loop() {
   Serial.print(AccY);
     Serial.println("AccelerationZ");
 
-  Serial.print(AccelerationZ);
+  Serial.print(AccZ);
   while (micros() - LoopTimer < 4000);
   LoopTimer=micros();
 }
